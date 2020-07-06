@@ -49,7 +49,7 @@ class NoteListFragment : Fragment(){
         return mRestService.getNotes(key, ref, results)
     }
     private fun getData(){
-        val call: Call<NoteModel> = getNotes("L9XT-8D3O-QUBD-7RP7", "caxtzzsi", 3)
+        val call: Call<NoteModel> = getNotes("L9XT-8D3O-QUBD-7RP7", "caxtzzsi", 15)
         call.enqueue(object: Callback<NoteModel>{
             override fun onResponse(call: Call<NoteModel>, response: Response<NoteModel>) {
                 if(response.code() == 200){
