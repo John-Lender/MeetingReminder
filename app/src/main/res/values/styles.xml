@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:text">@string/error</item>
+    </style>
+
+    <style name="item_list_title" parent="CardView.Dark">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorSnow</item>
+    </style>
+    <style name="item_list_title.note" parent="item_list_title">
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+    <style name="item_list_text" parent="CardView.Light">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/colorSnow</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="item_list_text.note" parent="item_list_text">
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="button_reminder_fragment"  parent="TextAppearance.AppCompat.Button">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/colorDarkBlue</item>
+        <item name="android:background">@drawable/shape_round</item>
+    </style>
+    <style name="input_layout_reminder_fragment" parent="Widget.Design.TextInputLayout">
+        <item name="android:padding">1dp</item>
+        <item name="hintTextColor">@color/colorDarkBlue</item>
+        <item name="android:background">@drawable/shape_input_layout</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+</resources>

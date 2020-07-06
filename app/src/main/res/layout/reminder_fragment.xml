@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/colorLightGrey">
+    <!--app:errorTextAppearance="@style/error_appearance"
+            app:hintTextAppearance="@style/error_appearance"-->
+    <com.google.android.material.textfield.TextInputLayout
+            style="@style/input_layout_reminder_fragment"
+            android:id="@+id/title_reminder_il"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            android:hint="@string/title_reminder"
+            app:errorEnabled="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/title_reminder_et"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            style="@style/input_layout_reminder_fragment"
+            android:id="@+id/date_reminder_il"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            android:hint="@string/date_reminder"
+            app:errorEnabled="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:focusable="false"
+                android:id="@+id/date_reminder_et"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            style="@style/input_layout_reminder_fragment"
+            android:id="@+id/time_reminder_il"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            android:hint="@string/time_reminder">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:focusable="false"
+                android:id="@+id/time_reminder_et"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/selected_client_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selected_client"/>
+    <com.google.android.material.textfield.TextInputLayout
+            style="@style/input_layout_reminder_fragment"
+
+            app:startIconDrawable="@mipmap/baseline_search_black_18dp"
+            android:id="@+id/full_name_reminder_il"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            android:hint="@string/full_name_reminder"
+            app:errorEnabled="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:focusable="false"
+                android:id="@+id/full_name_reminder_et"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            style="@style/input_layout_reminder_fragment"
+            app:startIconDrawable="@mipmap/baseline_search_black_18dp"
+            android:id="@+id/email_reminder_il"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconMode="clear_text"
+            android:hint="@string/email_address"
+            app:errorEnabled="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:focusable="false"
+                android:id="@+id/email_reminder_et"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="24dp">
+        <Button
+                android:layout_gravity="left"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back_button"
+                android:textSize="16sp"
+                style="@style/button_reminder_fragment"/>
+        <!--android:theme="@style/Theme.MaterialComponents"-->
+        <Button
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_button"
+                android:textSize="16sp"
+                style="@style/button_reminder_fragment"/>
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
+

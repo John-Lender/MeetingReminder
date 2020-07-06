@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MeetingRemainder</string>
+    <string name="title_reminder">Title</string>
+    <string name="date_reminder">Date</string>
+    <string name="time_reminder">Time</string>
+    <string name="selected_client">Selected Client</string>
+    <string name="full_name_reminder">Full name</string>
+    <string name="email_address">Email</string>
+    <string name="back_button">Back</string>
+    <string name="save_button">Save</string>
+    <string name="error">Error</string>
+    <string name="empty_item_remind">You have no reminders yet</string>
+</resources>
